@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="studentformstyle.css">
+</head>
+
+<body>
+    <div class="row1">
+    <h1>STUDENT ENROLLMENT FORM</h1></div>
+    <div class="row2">
+        <div class="column1">
+            <form action="submit">
+            <div class="rc"><h3>Name</h3><input id="name" required type="text" class="inputbox" placeholder="Enter your Name"></div>
+            <div class="rc"><h3>Email</h3><input id="email" required type="email" class="inputbox" placeholder="Enter your Email"></div>
+            <div class="rc"><h3>Website</h3><input id="website" required type="text" class="inputbox" placeholder="Enter your website"></div>
+            <div class="rc"><h3>Image Link</h3><input required type="file" id="img" name="img" accept="image/*"><label for="img" id="uploadcreate" class="uploadimg">Upload</label></div>
+            <div class="rc">
+                <h3>Gender</h3>
+                <div>
+                <input required type="radio"  value="male" name="Gender"><label value="1">Male</label><br>
+                <input required type="radio" value="female" name="Gender" ><label value="2">Female</label><br>
+                <input required type="radio" value="others" name="Gender" ><label value="3">Others</label>
+                </div>
+            </div>
+            <div class="rc">
+                <h3>Skills</h3>
+                <div>
+                    <input required type="checkbox" id="html" name="Skils1" value="Bike">
+                    <label for="Skils1">Html</label>
+                    <input required type="checkbox" id="css" name="Skils2" value="Car">
+                    <label for="Skils2">CSS</label>
+                    <input required type="checkbox" id="js" name="Skils3" value="Boat">
+                    <label for="Skils3">JavaScript</label>
+                </div>
+            </div>
+            <div class="rc">
+                <button type="button" id="enroll">Enroll</button>
+                <input required type="reset" id="clear" value="Clear">
+                
+            </div>
+            </form>    
+        </div>
+        <div class="column2">
+            <div class="rc"><h2>Enrolled</h2></div>
+            <span>
+            <div class="rcenrolled" id="rcenrolled">
+                
+            </span>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+
+    <script src="studentform.js"></script>
+</body>
+</html>
